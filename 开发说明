@@ -1,0 +1,24 @@
+项目部署需要修改内容值
+common/common.php
+manual/GlobalInc.php
+app/global.php
+
+在线地址
+http://wcphp172.xinhaimobile.cn/wecaat_login/wechat_mobile.php?skey=SKEY&surl=http://wcphp172.xinhaimobile.cn/xh_food_order/on-line/app/
+厨师长帮其它用户点餐
+http://wcphp172.xinhaimobile.cn/wecaat_login/wechat_mobile.php?skey=SKEY&surl=http://wcphp172.xinhaimobile.cn/xh_food_order/on-line/app_head_chef/
+
+
+http://wcphp172.xinhaimobile.cn/xh_food_order/on-line/food/
+=================================================================UI 框架更新后
+
+
+
+
+
+
+
+
+
+
+

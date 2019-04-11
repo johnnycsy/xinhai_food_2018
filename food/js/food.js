@@ -1,0 +1,1 @@
+var xh = new GlobalInc();

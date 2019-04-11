@@ -1,0 +1,106 @@
+全局配置文件
+global.inc.php
+
+本地浏览地址
+http://wcphp172.xinhaimobile.cn/wecaat_login/wechat_mobile.php?skey=SKEY&surl=http://localhost/food_www2018/app/
+
+http://localhost/food_www2018/app/
+
+线上浏览：
+http://wcphp172.xinhaimobile.cn/wecaat_login/wechat_mobile.php?skey=SKEY&surl=
+wcphp172.xinhaimobile.cn/xh_food_order/on-line/app/
+===============================================================================
+接口 - 用户登录 and 初始化页面信息
+postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "operation": "QueryUserLogin",
+        };
+
+===============================================================================
+接口 - 查询所有桌号信息
+postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "operation": "QueryDescAll",
+        };
+
+===============================================================================
+接口 - 加入餐桌
+ postData = {
+                "appid": appid,
+                "ms": ms,
+                "appkey": appkey,
+                "openid": localStorage.openid,
+                "unionid": localStorage.unionid,
+                "operation": "AddDeskMy",
+                "desk_id": target,
+                "user_id": user_id,
+            };
+===============================================================================
+接口 - 点击加购
+ postdata = {
+                "appid": appid,
+                "ms": ms,
+                "appkey": appkey,
+                "openid": localStorage.openid,
+                "unionid": localStorage.unionid,
+                "operation": "InsertCartAddNumber",
+                "food_id": id,
+                "food_number": number,
+                "user_id": user_id,
+                "desk_id": desk_id,
+            };
+===============================================================================
+接口 - 订单查询
+postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "operation": "QueryOrderDetails",
+        };
+===============================================================================
+接口 - 提交订单
+postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "desk_id": desk_id,
+            "user_id": user_id,
+            "operation": "ConfirmOrder",
+        };
+===============================================================================
+接口 - 按时间查询订单  // 下发时间，查询指定时间订单，不下发，查询所有时间
+postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "operation": "QueryOrderTimeList",
+            "user_id": user_id,
+            "desk_id": desk_id,
+        };
+===============================================================================
+接口 - 按月份进行基本统计
+var postData = {
+            "appid": appid,
+            "ms": ms,
+            "appkey": appkey,
+            "openid": localStorage.openid,
+            "unionid": localStorage.unionid,
+            "operation": "YeaderOrderPrice",
+            "user_id": user_id,
+            "desk_id": desk_id,
+            "time": times
+        };
